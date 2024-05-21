@@ -1,0 +1,82 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    color: #222;
+}
+.main {
+    background: #fff;
+    min-height: 100vh;
+}
+.container {
+    width: 540px;
+    border-radius: 10px;
+    background-color: #fff;
+    justify-content: center;
+    margin: 120px auto 20px;
+    padding: 20px 16px;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+h3 {
+    display: flex;
+    text-align: center;
+    cursor: pointer;
+}
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #eee;
+    border-radius: 50px;
+    margin: 12px 0;
+}
+input {
+    flex: 1;
+    border: none;
+    background: transparent;
+    outline: none;
+    padding: 10px;
+    padding-left: 20px;
+}
+.btn-add {
+    width: 75px;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    background-color: #0096FF;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+.btn-add:hover {
+    background-color: #4898ff;
+    transition: 0.5s;
+}
+.tasks-container {
+    display: flex;
+    flex-direction: column;
+}
+.task {
+    display: grid;
+    grid-template-columns: minmax(100px, 300px) 1fr;
+    grid-gap: 4px;
+    margin-bottom: 4px;
+    padding: 4px 16px;
+}
+.complete {
+    text-decoration: line-through;
+}
+.delete {
+    width: fit-content;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    padding: 10px 20px;
+    justify-self: end;
+}
+.delete:hover {
+    background-color: #ddd;
+    transition: 0.5s;
+}

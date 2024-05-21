@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+:root {
+    --light-green: #01be94;
+    --dark-green: #14ab89;
+    --light-background: #eee;
+    --dark-background: #2c3639;
+    --light-text: #eee;
+    --dark-text: #222;
+    --white: #fff;
+    --gray: #555;
+    --black: #000;
+    --light-section-shadow: #ddd;
+    --dark-section-shadow: #ddd;
+}
+body {
+    font-family: 'Spline sans', sans-serif;
+    background-color: var(--light-background);
+    color: var(--dark-text);
+}
+nav {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: var(--light-background);
+    border-bottom: 1px solid var(--light-section-shadow);
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+}
+nav ul li {
+    color: var(--black);
+    background-color: var(--light-green);
+    border-radius: 0.5rem;
+    display: block;
+    padding: 10px 16px;
+    margin: 0 6px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+nav ul li:hover {
+    background-color: var(--dark-green);
+    transition: 0.5s;
+}
+nav ul li:last-child {
+    margin-right: 18px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+#welcome-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid var(--section-shadow);
+    background-image: url('backu.png');
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+h1 {
+    display: block;
+    font-size: 6rem;
+    text-align: center;
+    color: var(--dark-text);
+}
+span {
+    color: var(--light-green);
+}
+#welcome-page p {
+    color: var(--gray);
+    font-family: 'Work sans', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
+#welcome-page button {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5px;
+    width: fit-content;
+    border: none;
+    border-radius: 0.5rem;
+    color: var(--white);
+    background-color: var(--light-green);
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-top: 120px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+#welcome-page button:hover {
+    background-color: var(--dark-green);
+    transition: 0.5s;
+}
+#welcome-page button a {
+    text-decoration: none;
+    color: inherit;
+}
+#welcome-page img {
+    width: 85px;
+    margin: 12px;
+    border-radius: 50%;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+#stuff {
+    min-height: 100vh;
+    max-height: fit-content;
+    padding: 5rem 5rem 2rem 5rem;
+    border-bottom: 1px solid var(--light-section-shadow);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.container {
+    max-width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header {
+    color: var(--gray);
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 0 auto 6rem auto;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-auto-rows: auto;
+    gap: 12px;
+    width: 100%;
+    margin: 0 auto;
+}
+.tile-item {
+    display: block;
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.tile-item:hover {
+    background-color: var(--light-green);
+    transition: 0.5s ease-out;
+}
+.tile-item:hover h2 {
+    color: var(--white);
+    transition: 0.3s ease-out;
+}
+.tile-item a {
+    text-decoration: none;
+}
+.tile-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.tile-name {
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: var(--gray);
+    text-align: center;
+    padding: 4px 16px;
+    margin-bottom: 8px;
+}
+#contact {
+    /* background: #ddd; */
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#contact p {
+    display: inline-block;
+    font-size: 1.5rem;
+    text-align: center;
+}
+#contact a {
+    text-decoration: none;
+    color: inherit;
+}

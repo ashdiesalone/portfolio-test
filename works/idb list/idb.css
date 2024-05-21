@@ -1,0 +1,106 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background-color: #EEE;
+    text-align: center;
+}
+body, h2, div, input, button {
+    padding: 0;
+    margin: 0 4px;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+.addName {
+    margin-top: 40px;
+}
+.btn-add {
+    height: 40px;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    background-color: #0096FF;
+    cursor: pointer;
+}
+.btn-add:hover {
+    background-color: #4898ff;
+    transition: 0.5s;
+}
+#name {
+    height: 40px;
+    border: none;
+    border-radius: 50px;
+    background: white;
+    outline: none;
+}
+.btn-add, #name {
+    padding: 4px 20px;
+}
+.nombres {
+    margin: auto;
+    max-width: 500px;
+    margin-top: 40px;
+}
+.nombre {
+    display: grid;
+    grid-template-columns: minmax(100px, 300px) 1fr;
+    grid-gap: 6px;
+}
+.options {
+    display: flex;
+    justify-self: end;
+}
+.options button {
+    margin: 0 4px;
+}
+.delete {
+    padding: 4px 16px;
+    max-width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    background-color: #0096FF;
+    cursor: pointer;
+}
+.delete:hover {
+    background-color: #4898ff;
+    transition: 0.5s;
+}
+.posible {
+    padding: 4px 16px;
+    max-width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    background-color: #0096FF;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.posible:hover {
+    background-color: #4898ff;
+    transition: 0.5s;
+}
+.imposible {
+    padding: 4px 16px;
+    max-width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    background-color: #ccc;
+    transition: 0.5s;
+}
+.nombre h2 {
+    text-align: left;
+    padding: 6px;
+    outline: none;
+}

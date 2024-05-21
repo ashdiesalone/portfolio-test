@@ -1,0 +1,53 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background-color: #eee;
+}
+input {
+    display: flex;
+    width: 540px;
+    height: 60px;
+    padding: 10px 20px 10px;
+    margin: 12px auto;
+    box-sizing: border-box;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+}
+input:focus {
+    outline: none;
+}
+input[type = 'submit'] {
+    width: 150px;
+    margin-top: 18px;
+    border: none;
+    background-color: #0096FF;
+    color: white;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+input[type = 'submit']:hover {
+    background-color: #4898ff;
+    transition: background 0.5s;
+}
+form {
+    width: 50%;
+    margin: auto;
+    padding: auto;
+}
+h2 {
+    text-align: center;
+}
+.resultado {
+    text-align: center;
+    margin: 20px;
+    font-weight: bold;
+}
+.green {
+    color: green;
+}
+.red {
+    color: red;
+}

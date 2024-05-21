@@ -1,0 +1,63 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    scrollbar-width: none;
+}
+*::-webkit-scrollbar {
+    display: none;
+}
+body {
+    background-color: #eee;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.todo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: max-content;
+}
+.grid-container {
+    display: grid;
+    grid-template-rows: 70px;
+    grid-template-columns: repeat(4, minmax(min-content, max-content));
+    grid-auto-rows: 70px;
+    text-align: center;
+}
+.grid-container .grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px 10px;
+    margin: 5px;
+    border: 1px solid white;
+    border-radius: 50px;
+    overflow: scroll;
+    background: #fff;
+}
+.grid-container .semana-elegida {
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.btn-confirmar {
+    display: block;
+    margin-top: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 60px;
+    min-width: 150px;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    background-color: #0096FF;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+.btn-confirmar:hover {
+    background-color: #4898ff;
+    transition: background 0.5s;
+}
